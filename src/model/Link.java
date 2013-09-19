@@ -5,8 +5,8 @@ import java.util.LinkedList;
 /**
  * A {@code Link} describes the way 3 {@link Cube}s follow each other.
  * <p>
- * When comparing the {@code Cube}s list and the {@link LinksList}, a {@code Link} has
- * the same index as the central {@code Cube} of the 3 that it describes. This
+ * When comparing the {@code Cube}s list and the {@link LinksList}, a {@code Link}
+ * has the same index as the central {@code Cube} of the 3 that it describes. This
  * central {@code Cube} is referred to as the "associated" {@code Cube}.
  * </p>
  * <p>
@@ -22,7 +22,7 @@ import java.util.LinkedList;
  * 
  * </li>
  * <li>{@link #ELBOW}: the associated cube is in the middle of an elbow, which means
- * that the 3 cubes form a 90-degrees angle. This can be represented as:<br>
+ * that the 3 cubes form a 90-degree angle. This can be represented as:<br>
  * 
  * <pre>
  * {@code OO
@@ -36,12 +36,18 @@ import java.util.LinkedList;
  * @author <a href="mailto:joffrey.bion@gmail.com">Joffrey Bion</a>
  */
 enum Link {
+    /**
+     * Associated to a {@link Cube} that is an end of the puzzle.
+     */
     END {
         @Override
         LinkedList<Cube> getNextPossibleCubes(Cube previous, Cube current) {
             throw new RuntimeException("Cannot call this method on an end link.");
         }
     },
+    /**
+     * Associated to the middle {@link Cube} of a straight line of 3 {@code Cubes}.
+     */
     STRAIGHT {
         @Override
         LinkedList<Cube> getNextPossibleCubes(Cube previous, Cube current) {
@@ -51,6 +57,10 @@ enum Link {
             return cubes;
         }
     },
+    /**
+     * Associated to the middle {@link Cube} of an elbow. An elbow means 3
+     * {@code Cube}s forming a 90-degree angle.
+     */
     ELBOW {
         @Override
         LinkedList<Cube> getNextPossibleCubes(Cube previous, Cube current) {
