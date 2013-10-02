@@ -27,7 +27,7 @@ class LinksList extends ArrayList<Link> {
     }
 
     private LinksList() {
-        new ArrayList<>();
+        super();
         add(Link.END);
         add(Link.STRAIGHT);
         add(Link.ELBOW);

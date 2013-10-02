@@ -37,7 +37,7 @@ import java.util.LinkedList;
  */
 enum Link {
     /**
-     * Associated to a {@link Cube} that is an end of the puzzle.
+     * Associated to one of the 2 {@link Cube}s that are the puzzle's ends.
      */
     END {
         @Override
