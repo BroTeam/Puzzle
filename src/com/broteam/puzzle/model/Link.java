@@ -11,6 +11,7 @@ import java.util.LinkedList;
  * </p>
  * <p>
  * This enum's values mean:
+ * </p>
  * <ul>
  * <li>{@link #END}: the associated cube is an end cube.</li>
  * <li>{@link #STRAIGHT}: the associated cube is in the middle of 3 cubes following
@@ -31,7 +32,6 @@ import java.util.LinkedList;
  * 
  * </li>
  * </ul>
- * </p>
  * 
  * @author <a href="mailto:joffrey.bion@gmail.com">Joffrey Bion</a>
  */

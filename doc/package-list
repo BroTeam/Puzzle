@@ -1,2 +1,2 @@
-model
-solver
+com.broteam.puzzle.model
+com.broteam.puzzle.solver
