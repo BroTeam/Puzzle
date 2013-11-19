@@ -1,9 +1,9 @@
-package com.broteam.puzzle.solver;
+package com.jbion.puzzle.solver;
 
 import java.util.LinkedList;
 
-import com.broteam.puzzle.model.Cube;
-import com.broteam.puzzle.model.Puzzle;
+import com.jbion.puzzle.model.Cube;
+import com.jbion.puzzle.model.Puzzle;
 
 /**
  * The main class of the solver.

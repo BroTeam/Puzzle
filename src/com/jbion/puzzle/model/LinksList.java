@@ -1,4 +1,4 @@
-package com.broteam.puzzle.model;
+package com.jbion.puzzle.model;
 
 import java.util.ArrayList;
 
